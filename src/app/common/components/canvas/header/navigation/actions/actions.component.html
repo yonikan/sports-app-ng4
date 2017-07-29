@@ -1,0 +1,58 @@
+
+
+            <div class="actions-wrapper">
+
+
+                <span class="navigation-dialog" mdTooltip="Notifications" [mdMenuTriggerFor]="notificationsMenu">
+                      <i class="material-icons">notifications</i>
+                </span>
+                <md-menu #notificationsMenu="mdMenu">
+                  <md-list class="list-warpper">
+                      <md-list-item><i class="material-icons">account_circle</i> You have added link number 3223 suscefully.</md-list-item>
+                      <md-list-item><i class="material-icons">account_circle</i> You have added link number 3223 suscefully.</md-list-item>
+                      <md-list-item><i class="material-icons">account_circle</i> You have added link number 3223 suscefully.</md-list-item>
+                      <md-list-item><i class="material-icons">account_circle</i> You have added link number 3223 suscefully.</md-list-item>
+                      <md-list-item><i class="material-icons">account_circle</i> You have added link number 3223 suscefully.</md-list-item>
+                      <md-list-item><i class="material-icons">account_circle</i> You have added link number 3223 suscefully.</md-list-item>
+                  </md-list>
+                </md-menu>
+
+
+                <span class="navigation-dialog" mdTooltip="Logged-in" [mdMenuTriggerFor]="menu">
+                      <i class="material-icons">account_circle</i>
+                </span>
+                <md-menu #menu="mdMenu">
+
+                      <md-card class="example-card">
+
+                        <md-card-header>
+                          <div md-card-avatar class="example-header-image"></div>
+                          <md-card-title>YONI KANGUN</md-card-title>
+                          <md-card-subtitle></md-card-subtitle>
+                        </md-card-header>
+
+                        <img md-card-image src="../../../assets/img/test22/shiba2.jpg">
+
+                        <md-card-content>
+                          <md-slide-toggle>Slide me!</md-slide-toggle>
+                          
+                          <md-checkbox>Check me!</md-checkbox>
+
+                        </md-card-content>
+
+                        <md-card-actions>
+                          <button md-button>LOG-OUT</button>
+                          <button md-button>SHARE</button>
+                        </md-card-actions>
+
+                      </md-card>
+                  
+                </md-menu>
+
+                <span class="navigation-dialog" mdTooltip="Full Screen" >
+                      <i class="material-icons">open_in_new</i>
+                </span>
+
+
+                <a md-raised-button routerLink="/login">Login</a>
+            </div>

@@ -1,0 +1,23 @@
+
+// the path when located in the common style dir
+// @import '../../../../common/style/_vars';
+
+// Path to the assets folder
+@import '../../../../../assets/style/_vars';
+
+
+.header-wrapper {
+    width: 100%;
+    display: inline-block;
+    background-color: $nav-selected-back !important;
+    color: #fff;
+
+    a {
+        color: #fff !important;
+    }
+
+    img {
+        padding-top: 10px;
+        padding-left: 40px;
+    }
+}

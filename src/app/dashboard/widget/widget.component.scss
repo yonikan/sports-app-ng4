@@ -1,0 +1,55 @@
+
+
+
+.widget-wrapper {
+  flex-basis: 25%;
+  // flex-grow: 1;
+  // order: 3;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+
+
+  // min-height: 900px;
+
+  .is-loading {
+    height: 300px;
+    min-width: 530px;
+    
+    md-spinner {
+        margin: 0 auto;
+    }
+  }
+
+  .widget-content {
+    width: 550px;
+    // height: 300px;
+
+    .widgets-actions {
+        right: 15px;
+        top: 15px;
+        position: absolute;
+    }
+  }
+
+  .example-card {
+    // width: 400px;
+    padding-bottom: 7px;
+    display: inline-block ;
+
+    md-card-header {
+      background-color: #fff;
+
+      // &:hover {
+      //   background-color: #d2d2d2;
+      // }
+    }
+  }
+
+  .example-header-image {
+    background-image: url('../../../assets/img/test22/shiba1.jpg');
+    background-size: cover;
+  }
+}
+
+

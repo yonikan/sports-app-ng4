@@ -1,0 +1,19 @@
+
+  <md-sidenav-container>
+      
+    <md-sidenav #sidenav mode="over" opened="false">
+        <app-sidebar></app-sidebar>
+    </md-sidenav>
+
+    <div class="content">
+         <button md-mini-fab class="mini-fab" (click)="sidenav.toggle()">
+            <md-icon>add</md-icon>
+        </button>   
+          <!-- <a md-raised-button (click)="sidenav.toggle()">Login</a>  -->
+        <app-canvas></app-canvas>
+    </div>
+
+
+      
+  </md-sidenav-container>
+

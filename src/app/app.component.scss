@@ -1,0 +1,24 @@
+
+// @import './common/style/_vars';
+
+
+md-sidenav-container, .content {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+md-sidenav {
+  width: 370px;
+}
+
+.content {
+  
+    .mini-fab {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 30px;
+        height: 30px; 
+    }
+}

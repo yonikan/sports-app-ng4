@@ -1,0 +1,63 @@
+
+<div class="sidebar-wrapper">
+
+  <md-tab-group>
+
+    <md-tab>
+      <ng-template md-tab-label>
+        <md-icon>insert_chart</md-icon>
+      </ng-template>
+
+      <h2>FAVORITES</h2>
+      <span class="back-btn"><button md-button (click)="sidenav.close()"><md-icon md-list-icon>keyboard_arrow_left</md-icon></button></span> 
+
+      <md-list>
+        <h3 md-subheader>Folders</h3>
+
+        <md-list-item *ngFor="let folder of folders">
+          <md-icon md-list-icon>note</md-icon>
+          <h4 md-line>{{folder.name}}</h4>
+          <p md-line> {{folder.updated | date}} </p>
+        </md-list-item>
+        <md-divider></md-divider>
+        <h3 md-subheader>Notes</h3>
+        <md-list-item *ngFor="let note of notes">
+          <md-icon md-list-icon>star</md-icon>
+          <h4 md-line>{{note.name}}</h4>
+          <p md-line> {{note.updated | date}} </p>
+        </md-list-item>
+
+      </md-list>
+    </md-tab>
+
+    
+    <md-tab>
+      <ng-template md-tab-label>
+        <md-icon>language</md-icon>
+      </ng-template>
+
+      <h2>OMNI PANEL</h2>
+      <span class="back-btn"><button md-button><md-icon md-list-icon>keyboard_arrow_left</md-icon></button></span> 
+
+      <md-list>
+        <h3 md-subheader>Folders</h3>
+        <md-list-item *ngFor="let folder of folders">
+          <md-icon md-list-icon>folder</md-icon>
+          <h4 md-line>{{folder.name}}</h4>
+          <p md-line> {{folder.updated | date}} </p>
+        </md-list-item>
+        <md-divider></md-divider>
+        <h3 md-subheader>Notes</h3>
+        <md-list-item *ngFor="let note of notes">
+          <md-icon md-list-icon>note</md-icon>
+          <h4 md-line>{{note.name}}</h4>
+          <p md-line> {{note.updated | date}} </p>
+        </md-list-item>
+        
+      </md-list>
+    </md-tab>
+
+  </md-tab-group>
+
+</div>
+
